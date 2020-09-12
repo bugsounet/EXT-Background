@@ -10,7 +10,9 @@ var recipe = {
       moduleExec: {
         module: ["MMM-GoogleAssistant"],
         exec: (module,param,from) => {
-          var path = "modules/MMM-GABackgound/myprefered.jpg"
+          var file = "myprefered.jpg"
+
+          var path = "modules/MMM-GABackgound/" + file
           var GA = document.getElementById("GA_DOM")
           GA.setAttribute('style', "background-image: url(" + path + ");")
         }
