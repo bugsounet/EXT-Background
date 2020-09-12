@@ -1,6 +1,6 @@
 # MMM-GABackground
 
-This module is an addons for MMM-GoogleAssistant.
+This module is an extension for MMM-GoogleAssistant.
 
 It allows to change the default Google Assistant background to your own or with animated gifs for each status of the assistant
 
