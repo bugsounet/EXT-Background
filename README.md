@@ -18,12 +18,11 @@ npm install
 
 * I have just to configure your recipe and update your recipe confiuration in MMM-GoogleAssistant
 
-### Recipe configuration
 * npm installer have installed 2 new recipes in GoogleAssistant recipes directory
   * `with-BackgroundStatus.js`: allow to change the background of the assistant for each status of it
   * `with-Background.js`: allow to change the background of the assistant with your prefered background 
 
-* How add a recipe to GoogleAssistant ?
+### How add a recipe to GoogleAssistant ?
 
 In your GoogleAssistant configuration (in config.js), you have a `recipe:[]` field, just add your wanted recipe on it !<br>
 Sample:
@@ -35,7 +34,7 @@ if you have already a recipes configuration just add it in the queue
 recipes: [ "with-MMM-TelegramBot.js", "with-BachgroundStatus.j"],
 ```
 
-* How configure your wanted recipe:<br>
+### How configure your wanted recipe:<br>
 Open your prefered editor and edit your wanted recipe !
 
   * `with-BackgroundStatus.js`<br>  
@@ -77,5 +76,5 @@ Now, you have just to select your model in your recipe configuration
 
 You can Make a PullRequest with your own model !
 
-### Notes:
+## Notes:
  * For working GoogleAssistant need the `fullscreen_above` position !
