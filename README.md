@@ -56,7 +56,7 @@ Open your prefered editor and edit your wanted recipe !
   In this recipe, you have `var file = "myprefered.jpg"`<br>
   Just replace the value with your wanted the file name ! (Attention to uppercase,lowercase,...)<br>
   
-### Creation of a model
+## Creation of a model
 
 GoogleAssistant have some `Status`: listen, standby, confirmation, reply, error, hook<br>
 The recipe read it<br>
@@ -74,6 +74,8 @@ So we will apply a gif to all status !
    
 If a gif is missing: it return a black screen for the missing status GIF<br>
 Now, you have just to select your model in your recipe configuration
+
+You can Make a PullRequest with your own model !
 
 ### Notes:
  * For working GoogleAssistant need the `fullscreen_above` position !
