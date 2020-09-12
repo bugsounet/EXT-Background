@@ -1,0 +1,18 @@
+{
+  "name": "MMM-GABackground",
+  "version": "1.0.1",
+  "description": "Background for MMM-GoogleAssistant",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bugsounet/MMM-MMM-GABackground"
+  },
+  "scripts": {
+    "postinstall": "installer/postinstall.sh"
+  },
+  "author": "@bugsounet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bugsounet/MMM-MMM-GABackground/issues"
+  },
+  "homepage": "https://github.com/bugsounet/MMM-MMM-GABackground"
+}
