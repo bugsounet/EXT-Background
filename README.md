@@ -39,10 +39,14 @@ Open your prefered editor and edit your wanted recipe !
 
   * `with-BackgroundStatus.js`<br>  
   Actually I have prepared 4 models:
-    - jarvis
-    - lego
-    - old
-    - cortana
+    - jarvis:<br>
+    ![](https://github.com/bugsounet/MMM-GABackground/blob/master/jarvis/standby.gif)
+    - lego:<br>
+    ![](https://github.com/bugsounet/MMM-GABackground/blob/master/lego/standby.gif)
+    - old:<br>
+    ![](https://github.com/bugsounet/MMM-GABackground/blob/master/old/standby.gif)
+    - cortana:<br>
+    ![](https://github.com/bugsounet/MMM-GABackground/blob/master/cortana/standby.gif)
     
   You have just to replace the value of `var model=` by your wanted model<br>
   By default, i have set `jarvis`<br>
