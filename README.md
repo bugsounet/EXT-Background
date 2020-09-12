@@ -16,7 +16,7 @@ npm install
 
 ## Configuration
 
-* I have just to configure your recipe and update your recipe confiuration in MMM-GoogleAssistant
+* I have just to configure your recipe and update your recipe configuration in MMM-GoogleAssistant
 
 * npm installer have installed 2 new recipes in GoogleAssistant recipes directory
   * `with-BackgroundStatus.js`: allow to change the background of the assistant for each status of it
