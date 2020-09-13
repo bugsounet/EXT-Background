@@ -12,7 +12,7 @@ var recipe = {
         exec: (module,param,from) => {
           var file = "myprefered.jpg"
 
-          var path = "modules/MMM-GABackgound/" + file
+          var path = "modules/MMM-GABackground/" + file
           var GA = document.getElementById("GA_DOM")
           GA.setAttribute('style', "background-image: url(" + path + ");")
         }
