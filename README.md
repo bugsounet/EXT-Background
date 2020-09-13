@@ -31,7 +31,7 @@ recipes: [ "with-BackgroundStatus.js"],
 ```
 if you have already a recipes configuration just add it in the queue
 ```js
-recipes: [ "with-MMM-TelegramBot.js", "with-BachgroundStatus.js"],
+recipes: [ "with-MMM-TelegramBot.js", "with-BackgroundStatus.js"],
 ```
 
 ### How configure your wanted recipe:<br>
