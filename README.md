@@ -27,7 +27,7 @@ npm install
 In your GoogleAssistant configuration (in config.js), you have a `recipe:[]` field, just add your wanted recipe on it !<br>
 Sample:
 ```js
-recipes: [ "with-BackgroundStatus.j"],
+recipes: [ "with-BackgroundStatus.js"],
 ```
 if you have already a recipes configuration just add it in the queue
 ```js
