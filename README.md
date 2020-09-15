@@ -82,3 +82,4 @@ You can Make a PullRequest with your own model !
 
 ## Notes:
  * For working GoogleAssistant need the `fullscreen_above` position !
+ * No other configuration needed in config.js !
