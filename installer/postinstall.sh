@@ -1,7 +1,6 @@
 #!/bin/bash
 # +-----------------+
 # | npm postinstall |
-# | @bugsounet      |
 # +-----------------+
 
 # get the installer directory
@@ -19,24 +18,17 @@ Installer_dir="$(Installer_get_current_dir)"
 
 # move to installler directory
 cd "$Installer_dir"
-
 source utils.sh
 
+# Go back to module root
+cd ..
+
 # module name
-Installer_module="GABackground"
-Version="$(node -p -e "require('./../package.json').version")"
-Installer_info "Welcome to $Installer_module v$Version"
-echo
-Installer_info "Installing all recipes..."
-echo
+Installer_module="$(grep -Eo '\"name\"[^,]*' ./package.json | grep -Eo '[^:]*$' | awk  -F'\"' '{print $2}')"
 
-Installer_info "Copy recipe 'with-Background.js' to MMM-GoogleAssistant recipe directory"
-cp -f with-Background.js ../../MMM-GoogleAssistant/recipes && Installer_success "Done"
-Installer_info "Copy recipe 'with-BackgroundStatus.js' to MMM-GoogleAssistant recipe directory"
-cp -f with-BackgroundStatus.js ../../MMM-GoogleAssistant/recipes && Installer_success "Done"
 
+# the end...
+Installer_warning "Support is now moved in a dedicated Server: https://forum.bugsounet.fr"
+Installer_warning "@bugsounet"
 echo
-
 Installer_success "$Installer_module is now installed !"
-echo
-
