@@ -1,19 +1,21 @@
 {
   "name": "MMM-GABackground",
   "version": "1.0.0",
-  "rev": "220215",
+  "rev": "220228",
   "description": "Background for MMM-GoogleAssistant v4",
   "repository": {
     "type": "git",
     "url": "https://github.com/bugsounet/EXT-Background"
   },
   "scripts": {
-    "postinstall": "installer/postinstall.sh"
+    "preinstall": "installer/preinstall.sh",
+    "postinstall": "installer/postinstall.sh",
+    "update": "installer/update.sh"
   },
   "author": "@bugsounet",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bugsounet/EXT-Background/issues"
+    "url": "https://forum.bugsounet.fr"
   },
-  "homepage": "https://github.com/bugsounet/EXT-Background"
+  "homepage": "https://wiki.bugsounet.fr/EXT-Background"
 }
