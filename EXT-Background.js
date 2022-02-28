@@ -6,7 +6,6 @@
 
 Module.register("EXT-Background", {
     defaults: {
-      debug: false,
       model: "jarvis",
       myImage: null
     },
@@ -14,17 +13,15 @@ Module.register("EXT-Background", {
     notificationReceived: function (notification, payload) {
       switch(notification) {
         case "DOM_OBJECTS_CREATED":
-          this.sendSocketNotification("INIT", this.config)
-          this.sendNotification("EXT_HELLO", this.name)
+          this.sendSocketNotification("INIT")
           break
         case "GA_READY":
-          this.sendNotification("GA_FORCE_FULLSCREEN")
-          break
-        case "ASSISTANT_LISTEN":
-          this.setBackground("listen")
+          this.sendNotification("EXT_HELLO", this.name)
           break
         case "ASSISTANT_THINK":
-          this.setBackground("think")
+        case "ASSISTANT_CONTINUE":
+        case "ASSISTANT_LISTEN":
+          this.setBackground("listen")
           break
         case "ASSISTANT_STANDBY":
           this.setBackground("standby")
@@ -32,17 +29,12 @@ Module.register("EXT-Background", {
         case "ASSISTANT_REPLY":
           this.setBackground("reply")
           break
-        case "ASSISTANT_CONTINUE":
-          this.setBackground("continue")
-          break
+        case "ASSISTANT_HOOK":
         case "ASSISTANT_CONFIRMATION":
           this.setBackground("confirmation")
           break
         case "ASSISTANT_ERROR":
           this.setBackground("error")
-          break
-        case "ASSISTANT_HOOK":
-          this.setBackground("hook")
           break
       }
     },
@@ -50,9 +42,6 @@ Module.register("EXT-Background", {
     setBackground: function(status) {
       let path = "modules/EXT-Background/"
       var GA = document.getElementById("GA_DOM")
-      if (status == "continue") status = "listen"
-      if (status == "think") status = "listen"
-      if (status == "hook") status = "confirmation"
       if (this.config.myImage) {
         path = path + this.config.myImage
       } else {
