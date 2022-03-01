@@ -17,8 +17,8 @@ Module.register("EXT-Background", {
       if (sender.name != "MMM-GoogleAssistant) return
 
       switch(notification) {
-        case "GAv4_READY":
-          this.sendNotification("EXT_HELLO", this.name)
+      case "GAv4_READY":
+        if (sender.name == "MMM-GoogleAssistant") this.sendNotification("EXT_HELLO", this.name)
           break
         case "ASSISTANT_THINK":
         case "ASSISTANT_CONTINUE":
