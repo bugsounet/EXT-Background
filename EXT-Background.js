@@ -10,12 +10,14 @@ Module.register("EXT-Background", {
       myImage: null
     },
 
-    notificationReceived: function (notification, payload) {
+    notificationReceived: function (notification, payload, sender) {
+      if (notification == "DOM_OBJECTS_CREATED") {
+        this.sendSocketNotification("INIT")
+      }
+      if (sender.name != "MMM-GoogleAssistant) return
+
       switch(notification) {
-        case "DOM_OBJECTS_CREATED":
-          this.sendSocketNotification("INIT")
-          break
-        case "GA_READY":
+        case "GAv4_READY":
           this.sendNotification("EXT_HELLO", this.name)
           break
         case "ASSISTANT_THINK":
