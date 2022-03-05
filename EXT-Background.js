@@ -18,7 +18,6 @@ Module.register("EXT-Background", {
       if (notification == "DOM_OBJECTS_CREATED") this.sendSocketNotification("INIT")
       if (sender.name != "MMM-GoogleAssistant") return
       if (notification == "GAv4_READY") {
-        this.sendNotification("GAv4_FORCE_FULLSCREEN")
         this.sendNotification("EXT_HELLO", this.name)
         this.ready = true
       }
