@@ -1,7 +1,7 @@
 /******************
 *  EXT-Background
 *  ©Bugsounet
-*  02/2022
+*  03/2022
 ******************/
 
 Module.register("EXT-Background", {
@@ -10,16 +10,21 @@ Module.register("EXT-Background", {
       myImage: null
     },
 
+    start: function () {
+      this.ready = false
+    },
+
     notificationReceived: function (notification, payload, sender) {
-      if (notification == "DOM_OBJECTS_CREATED") {
-        this.sendSocketNotification("INIT")
+      if (notification == "DOM_OBJECTS_CREATED") this.sendSocketNotification("INIT")
+      if (sender.name != "MMM-GoogleAssistant") return
+      if (notification == "GAv4_READY") {
+        this.sendNotification("GAv4_FORCE_FULLSCREEN")
+        this.sendNotification("EXT_HELLO", this.name)
+        this.ready = true
       }
-      if (sender.name != "MMM-GoogleAssistant) return
+      if (!this.ready) return
 
       switch(notification) {
-      case "GAv4_READY":
-        if (sender.name == "MMM-GoogleAssistant") this.sendNotification("EXT_HELLO", this.name)
-          break
         case "ASSISTANT_THINK":
         case "ASSISTANT_CONTINUE":
         case "ASSISTANT_LISTEN":
