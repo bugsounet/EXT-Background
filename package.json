@@ -1,7 +1,7 @@
 {
   "name": "MMM-GABackground",
-  "version": "1.0.0",
-  "rev": "220305",
+  "version": "1.0.1",
+  "rev": "220315",
   "description": "Background for MMM-GoogleAssistant v4",
   "repository": {
     "type": "git",
