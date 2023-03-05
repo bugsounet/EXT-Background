@@ -17,7 +17,7 @@ Module.register("EXT-Background", {
     notificationReceived: function (notification, payload, sender) {
       if (notification == "DOM_OBJECTS_CREATED") this.sendSocketNotification("INIT")
       if (!sender || (sender.name != "MMM-GoogleAssistant")) return
-      if (notification == "GAv4_READY") {
+      if (notification == "GAv5_READY") {
         this.sendNotification("EXT_HELLO", this.name)
         this.ready = true
       }
