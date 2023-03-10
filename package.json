@@ -1,8 +1,9 @@
 {
   "name": "EXT-Background",
-  "version": "1.0.2",
-  "rev": "220410",
-  "description": "Background for MMM-GoogleAssistant v4",
+  "version": "1.1.0",
+  "rev": "200310",
+  "description": "Background for MMM-GoogleAssistant v5",
+  "main": "EXT-Background.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/bugsounet/EXT-Background"
@@ -10,12 +11,19 @@
   "scripts": {
     "preinstall": "installer/preinstall.sh",
     "postinstall": "installer/postinstall.sh",
-    "update": "installer/update.sh"
+    "update": "installer/update.sh",
+    "reset": "git reset --hard",
+    "clean": "rm -rf node_modules package-lock.json"
   },
   "author": "@bugsounet",
   "license": "MIT",
   "bugs": {
     "url": "https://forum.bugsounet.fr"
   },
-  "homepage": "https://wiki.bugsounet.fr/EXT-Background"
+  "homepage": "https://wiki.bugsounet.fr/EXT-Background",
+  "dependencies": {
+    "check-node-version": "^4.2.1",
+    "glob": "^9.2.1",
+    "minify": "^9.2.0"
+  }
 }

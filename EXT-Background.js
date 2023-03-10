@@ -1,7 +1,7 @@
 /******************
 *  EXT-Background
 *  ©Bugsounet
-*  03/2022
+*  03/2023
 ******************/
 
 Module.register("EXT-Background", {
