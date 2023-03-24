@@ -1,8 +1,8 @@
 {
   "name": "EXT-Background",
-  "version": "1.1.0",
-  "rev": "200310",
-  "description": "Background for MMM-GoogleAssistant v5",
+  "version": "1.2.0",
+  "rev": "230324",
+  "description": "Background for MMM-GoogleAssistant",
   "main": "EXT-Background.js",
   "repository": {
     "type": "git",
