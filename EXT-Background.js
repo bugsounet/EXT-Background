@@ -12,7 +12,7 @@ Module.register("EXT-Background", {
 
     notificationReceived: function (notification, payload, sender) {
       if (notification == "Gw_READY" ) {
-        if (sender.name != "Gateway")) return
+        if (sender.name != "Gateway") return
         this.sendSocketNotification("INIT")
         this.sendNotification("EXT_HELLO", this.name)
       }
