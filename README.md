@@ -1,7 +1,5 @@
-# EXT-GABackground
-## Extented for `MMM-GoogleAssistant` v5.x
-
-EXT-Background is a module for the [MagicMirror](https://github.com/MichMich/MagicMirror) project by [Michael Teeuw](https://github.com/MichMich).<br>
+# EXT-Background
+## Extented for `MMM-GoogleAssistant`
 
 It allows to change background of `MMM-GoogleAssistant` with animated picture or your own background picture
 

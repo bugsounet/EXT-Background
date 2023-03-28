@@ -10,18 +10,13 @@ Module.register("EXT-Background", {
       myImage: null
     },
 
-    start: function () {
-      this.ready = false
-    },
-
     notificationReceived: function (notification, payload, sender) {
-      if (notification == "DOM_OBJECTS_CREATED") this.sendSocketNotification("INIT")
-      if (!sender || (sender.name != "MMM-GoogleAssistant")) return
-      if (notification == "GAv5_READY") {
+      if (notification == "Gw_READY" ) {
+        if (sender.name != "Gateway") return
+        this.sendSocketNotification("INIT")
         this.sendNotification("EXT_HELLO", this.name)
-        this.ready = true
       }
-      if (!this.ready) return
+      if (!sender || (sender.name != "MMM-GoogleAssistant")) return
 
       switch(notification) {
         case "ASSISTANT_THINK":
@@ -48,11 +43,8 @@ Module.register("EXT-Background", {
     setBackground: function(status) {
       let path = "modules/EXT-Background/"
       var GA = document.getElementById("GA_DOM")
-      if (this.config.myImage) {
-        path = path + this.config.myImage
-      } else {
-        path = path + this.config.model + "/" + status + ".gif?seed=" + Date.now()
-      }
+      if (this.config.myImage) path = path + this.config.myImage
+      else path = path + this.config.model + "/" + status + ".gif?seed=" + Date.now()
       GA.setAttribute('style', "background-image: url(" + path + ");")
     },
 
