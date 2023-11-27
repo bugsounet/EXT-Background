@@ -22,7 +22,7 @@
   },
   "homepage": "https://wiki.bugsounet.fr/EXT-Background",
   "dependencies": {
-    "esbuild": "^0.19.6",
+    "esbuild": "^0.19.8",
     "glob": "^10.3.7"
   }
 }
