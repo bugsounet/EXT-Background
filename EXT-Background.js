@@ -11,8 +11,8 @@ Module.register("EXT-Background", {
     },
 
     notificationReceived: function (notification, payload, sender) {
-      if (notification == "GW_READY" ) {
-        if (sender.name != "Gateway") return
+      if (notification == "GA_READY" ) {
+        if (sender.name != "MMM-GoogleAssistant") return
         this.sendSocketNotification("INIT")
         this.sendNotification("EXT_HELLO", this.name)
       }
