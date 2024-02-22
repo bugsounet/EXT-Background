@@ -8,6 +8,10 @@
     "type": "git",
     "url": "https://github.com/bugsounet/EXT-Background"
   },
+  "keywords": [
+    "magic mirror",
+    "background"
+  ],
   "scripts": {
     "preinstall": "installer/preinstall.sh",
     "postinstall": "installer/postinstall.sh -m -b",
