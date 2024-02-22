@@ -8,7 +8,7 @@ Module.register("EXT-Background", {
   defaults: {
     model: "jarvis",
     myImage: null
-  },
+  }
 
   notificationReceived (notification, payload, sender) {
     if (notification === "GA_READY" ) {
