@@ -3,14 +3,14 @@
 * BuGsounet ©02/22 *
 *******************/
 
-const NodeHelper = require('node_helper')
+const NodeHelper = require("node_helper");
 
 module.exports = NodeHelper.create({
-  socketNotificationReceived: function (notification, payload) {
+  socketNotificationReceived (notification, payload) {
     switch(notification) {
       case "INIT":
-        console.log("[BACKGROUND] EXT-Background Version:", require('./package.json').version, "rev:", require('./package.json').rev )
-        break
+        console.log("[BACKGROUND] EXT-Background Version:", require("./package.json").version, "rev:", require("./package.json").rev );
+        break;
     }
   }
 });
