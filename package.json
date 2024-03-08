@@ -1,7 +1,7 @@
 {
   "name": "EXT-Background",
-  "version": "1.4.0",
-  "rev": "240222",
+  "version": "1.4.1",
+  "rev": "240303",
   "description": "Background for MMM-GoogleAssistant",
   "main": "EXT-Background.js",
   "repository": {
@@ -9,6 +9,7 @@
     "url": "https://github.com/bugsounet/EXT-Background"
   },
   "keywords": [
+    "MMM-GoogleAssistant",
     "magic mirror",
     "background"
   ],
@@ -35,7 +36,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^8.57.0",
-    "@stylistic/eslint-plugin": "^1.6.2",
+    "@stylistic/eslint-plugin": "^1.6.3",
     "eslint": "^8.57.0",
     "eslint-plugin-import": "^2.29.1"
   }
