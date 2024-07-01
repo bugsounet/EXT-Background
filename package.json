@@ -1,7 +1,7 @@
 {
   "name": "EXT-Background",
-  "version": "1.4.1",
-  "rev": "240303",
+  "version": "1.5.0",
+  "rev": "240701",
   "description": "Background for MMM-GoogleAssistant",
   "main": "EXT-Background.js",
   "repository": {
@@ -15,7 +15,7 @@
   ],
   "scripts": {
     "preinstall": "installer/preinstall.sh",
-    "postinstall": "installer/postinstall.sh -m -b",
+    "postinstall": "installer/postinstall.sh -m",
     "update": "installer/update.sh",
     "reset": "git reset --hard",
     "clean": "rm -rf node_modules package-lock.json",
@@ -27,16 +27,19 @@
   "author": "@bugsounet",
   "license": "MIT",
   "bugs": {
-    "url": "https://forum.bugsounet.fr"
+    "url": "https://wiki.bugsounet.fr/EXT-Background/issues"
   },
   "homepage": "https://wiki.bugsounet.fr/EXT-Background",
+  "engines": {
+    "node": ">=20"
+  },
   "dependencies": {
-    "esbuild": "^0.20.1",
-    "glob": "^10.3.10"
+    "esbuild": "^0.22.0",
+    "glob": "^10.4.2"
   },
   "devDependencies": {
     "@eslint/js": "^8.57.0",
-    "@stylistic/eslint-plugin": "^1.6.3",
+    "@stylistic/eslint-plugin": "^1.8.1",
     "eslint": "^8.57.0",
     "eslint-plugin-import": "^2.29.1"
   }
