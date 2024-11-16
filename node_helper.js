@@ -6,10 +6,10 @@
 const NodeHelper = require("node_helper");
 
 module.exports = NodeHelper.create({
-  socketNotificationReceived (notification, payload) {
-    switch(notification) {
+  socketNotificationReceived (notification) {
+    switch (notification) {
       case "INIT":
-        console.log("[BACKGROUND] EXT-Background Version:", require("./package.json").version, "rev:", require("./package.json").rev );
+        console.log("[BACKGROUND] EXT-Background Version:", require("./package.json").version, "rev:", require("./package.json").rev);
         break;
     }
   }
