@@ -11,14 +11,14 @@ Module.register("EXT-Background", {
   },
 
   notificationReceived (notification, payload, sender) {
-    if (notification === "GA_READY" ) {
+    if (notification === "GA_READY") {
       if (sender.name !== "MMM-GoogleAssistant") return;
       this.sendSocketNotification("INIT");
       this.sendNotification("EXT_HELLO", this.name);
     }
     if (!sender || (sender.name !== "MMM-GoogleAssistant")) return;
 
-    switch(notification) {
+    switch (notification) {
       case "ASSISTANT_THINK":
       case "ASSISTANT_CONTINUE":
       case "ASSISTANT_LISTEN":
