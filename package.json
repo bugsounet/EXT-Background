@@ -1,7 +1,7 @@
 {
   "name": "EXT-Background",
-  "version": "1.6.0",
-  "rev": "241031",
+  "version": "1.6.1",
+  "rev": "241116",
   "description": "Background for MMM-GoogleAssistant",
   "main": "EXT-Background.js",
   "repository": {
