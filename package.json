@@ -1,7 +1,7 @@
 {
   "name": "EXT-Background",
   "version": "1.6.1",
-  "rev": "241116",
+  "rev": "241123",
   "description": "Background for MMM-GoogleAssistant",
   "main": "EXT-Background.js",
   "repository": {
@@ -38,7 +38,7 @@
     "glob": "^11.0.0"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin": "^2.10.1",
+    "@stylistic/eslint-plugin": "^2.11.0",
     "eslint": "^9.15.0",
     "eslint-plugin-import": "^2.31.0"
   }
